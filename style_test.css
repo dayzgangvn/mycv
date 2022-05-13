@@ -1,0 +1,106 @@
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(66, 204, 105);
+  padding: 40px;
+  text-align: left;
+  font-size: 40px;
+  color: white;
+  height: 300px;
+  justify-content: center;
+}
+h1{
+    font-size: 30px;
+}
+.vertical-menu{
+    float: left;
+    width: 30%;
+    height: 300px;
+    padding: 20px;
+}
+  
+.vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none;
+    font-size: 40px;
+}
+  
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+  
+.vertical-menu a.active {
+    background-color: #04AA6D; /* Add a green color to the "active/current" link */
+    color: white;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 500px; /* only for demonstration, should be removed */
+  font-size: 30px;
+}
+article img{
+    height: 200px;
+    width: 150px;
+    float: left;
+    padding-right: 10px;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.media{
+    align-items: center;
+    padding-left: 663px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.fb-post{
+    padding-left: 250px;
+    height: 400px;
+}
+.instagram-media{
+    float: left;
+    justify-content: center;
+    height:800px;
+    padding: 100px;
+}
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Style the footer */
+footer {
+    background-color: rgb(66, 204, 105);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    height: 100px;
+    padding-top: 30px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
